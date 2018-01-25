@@ -26,7 +26,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #dois ní
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool) #verifica o testo e utiliza como booleano
 
 ALLOWED_HOSTS = ['*']
@@ -79,7 +78,7 @@ WSGI_APPLICATION = 'eventex.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-default_dburl = 'sqlite:///' + os.path.jin(BASE_DIR, 'dbsqlite3')
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'dbsqlite3')
 DATABASES = {
     'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
 }

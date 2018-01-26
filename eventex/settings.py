@@ -31,7 +31,6 @@ DEBUG = config('DEBUG', default=False, cast=bool) #verifica o testo e utiliza co
 #ALLOWED_HOSTS = ['127.0.0.1', '.locallhost'. '.herokuapp.com']
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 
-
 # Application definition
 
 INSTALLED_APPS = (

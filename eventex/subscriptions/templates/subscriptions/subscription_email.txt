@@ -1,0 +1,13 @@
+Olá! Tudo Bem?
+
+Muito obrigada pela presença!
+
+Estes são os seus dados:
+
+Nome: {{ name }}
+CPF: {{ cpf }}
+email: {{ email }}
+Telefone: {{ phone }}
+
+Atenciosamente,
+Eu

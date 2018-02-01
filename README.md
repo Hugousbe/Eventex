@@ -2,6 +2,9 @@
 
 Sistema de eventos encomendado pelo Cliente
 
+[![Build Status](https://travis-ci.org/Hugousbe/Eventex.svg?branch=master)](https://travis-ci.org/Hugousbe/Eventex)
+[![Code Health](https://landscape.io/github/Hugousbe/Eventex/master/landscape.svg?style=flat)](https://landscape.io/github/Hugousbe/Eventex/master)
+
 ## Como desenvolver?
 
 1. Clone um repositório.

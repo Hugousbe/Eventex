@@ -5,4 +5,3 @@ class SubscriptionForm(forms.Form):
     cpf = forms.CharField()
     email = forms.EmailField()
     phone = forms.CharField()
-    pass

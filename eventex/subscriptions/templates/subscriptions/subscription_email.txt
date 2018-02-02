@@ -4,10 +4,10 @@ Muito obrigada pela presença!
 
 Estes são os seus dados:
 
-Nome: {{ name }}
-CPF: {{ cpf }}
-email: {{ email }}
-Telefone: {{ phone }}
+Nome: {{ subscription.name }}
+CPF: {{ subscription.cpf }}
+email: {{ subscription.email }}
+Telefone: {{ subscription.phone }}
 
 Atenciosamente,
 Eu

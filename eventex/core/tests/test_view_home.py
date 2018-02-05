@@ -1,9 +1,10 @@
 from django.test import TestCase
+from django.shortcuts import resolve_url as r
 
 # Create your tests here.
 class HomeTest(TestCase): #TestCase já vem com o Django
     def setUp(self):
-        self.response = self.client.get('/')  # client já vem no TestCase do Django
+        self.response = self.client.get(r('home'))  # client já vem no TestCase do Django
 
     def test_get(self):
         """GET / must return status code 200"""
@@ -15,4 +16,5 @@ class HomeTest(TestCase): #TestCase já vem com o Django
 
     def test_subscription_link(self):
         """"""
-        self.assertContains(self.response, 'href="/inscricao/"' )
+        expected='href="{}"'.format(r('subscriptions:new'))
+        self.assertContains(self.response, expected )

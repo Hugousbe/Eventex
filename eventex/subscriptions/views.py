@@ -16,6 +16,8 @@ def new(request):
 def empty_form(request):
     return render(request, 'subscriptions/subscription_form.html',
                   {'form': SubscriptionForm()})
+
+
 def create(request):
     form = SubscriptionForm(request.POST)
 

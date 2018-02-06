@@ -15,4 +15,13 @@ class SubscriptionForm(forms.Form):
     email = forms.EmailField(label='Email')
     phone = forms.CharField(label='Telefone')
 
+    def clean_name(self):
+        #HUGO bernardes
+        name = self.cleaned_data['name']
+        words = []
+        for w in name.split():
+            words.append(w.capitalize())
+        capitalized_name = ' '.join(words)
+        return capitalized_name
+
 
